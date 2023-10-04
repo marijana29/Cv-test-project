@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marijana">
     <meta name="description" content="the CV structure">
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
     <title>My CV</title>
 </head>
 
@@ -13,17 +18,23 @@
     <header>
         <h1>Marijana Milanov</h1>
         <p>Web developer</p>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <main>
         <article>
-            <section>
+            <section id="profile">
                 <h2>Profile</h2>
                 <p>Web Developer with a passion for creating engaging and
                     user-friendly websites. Former IT Technical Support professional with expertise in project
                     management and technical support. Dedicated to delivering top-notch solutions and providing
                     excellent customer support. Looking forward to new challenges and opportunities.</p>
             </section>
-            <section>
+            <section id="experiences">
                 <h2>Experiences</h2>
                 <section>
                     <header>
@@ -55,7 +66,7 @@
                     </header>
                 </section>
             </section>
-            <section>
+            <section id="skills">
                 <h2>Skills</h2>
                 <section>
                     <h3>Soft Skills</h3>
@@ -78,8 +89,12 @@
                     </ul>
                 </section>
             </section>
-            <section>
+            <section id="contact">
                 <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:marijana.kalicanin@yahoo.com">email</a></li>
+                    <li><a href="tel:01756249459">phone</a></li>
+                </ul>
                 <p>Contact info</p>
             </section>
         </article>
