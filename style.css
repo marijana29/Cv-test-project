@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: Roboto;
+}
+
+.header {
+  padding: 48px 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: lemonchiffon;
+  text-align: center;
+}
+
+.main {
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #bdb5a9;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-image: url("image.png");
+  margin-bottom: 8px;
+}
+
+.h {
+  font-family: monospace;
+}
