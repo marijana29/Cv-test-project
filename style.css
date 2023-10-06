@@ -15,6 +15,13 @@ body {
   margin: 0 auto;
   background-color: lemonchiffon;
   text-align: center;
+  border-bottom: 2px solid #000;
+}
+
+#experiences section {
+  border: 1px solid #000;
+  margin-bottom: 16px;
+  padding: 16px;
 }
 
 .main {
@@ -28,11 +35,38 @@ ul {
   list-style-type: none;
 }
 
-li {
+.h {
+  font-family: monospace;
+}
+
+#contact {
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+.contact {
+  list-style-type: none;
+}
+
+.skill {
   list-style-image: url("image.png");
   margin-bottom: 8px;
 }
 
-.h {
-  font-family: monospace;
+a:link {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: salmon;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: aquamarine;
 }
