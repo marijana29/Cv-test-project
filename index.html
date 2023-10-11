@@ -11,83 +11,103 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>My CV</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
 </head>
 
 <body>
     <header class="header">
-        <h1 class="h">Marijana Milanov</h1>
-        <p>Web developer</p>
+        <div class="header-content">
+            <h1 class="h">Marijana Milanov</h1>
+            <p id="profession">Web developer</p>
+        </div>
+
         <nav>
-            <a href="#profile">Profile</a>
-            <a href="#experiences">Experiences</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a class="nav-link" href="#profile">Profile</a>
+            <a class="nav-link" href="#experiences">Experiences</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#contact">Contact</a>
         </nav>
+        <aside class="badge">Hire me
+        </aside>
     </header>
     <main class="main">
         <article>
             <section id="profile">
-                <h2 class="h">Profile</h2>
-                <p>Web Developer with a passion for creating engaging and
-                    user-friendly websites. Former IT Technical Support professional with expertise in project
-                    management and technical support. Dedicated to delivering top-notch solutions and providing
-                    excellent customer support. Looking forward to new challenges and opportunities.</p>
+                <h2 class="h" id="profile-title">Profile</h2>
+                <p>I'm Marijana, a passionate Web Developer with a background in IT Technical Support, and experience in
+                    translation and publishing. I love creating engaging and user-friendly websites. Alongside my
+                    technical skills, I have a proven ability in
+                    translating and editing various types of content for publishing. I'm eager to bring this unique
+                    blend of skills to tackle new challenges in the field of web development.</p>
             </section>
             <section id="experiences">
-                <h2 class="h">Experiences</h2>
+                <h2 class="h" id="experience-title">Experiences</h2>
                 <section>
                     <header>
-                        <h3 class="h">Technical Support Analyst (Jaggaer)</h3>
-                        <p>(2020-2023)</p>
-                        <p>Perform technical troubleshooting and data analysis to determine root causes of software
+                        <h3 class="h">Technical Support Analyst - <strong>Jaggaer</strong></h3>
+                        <p class="p">(2020-2023)</p>
+                        <p class="description">Perform technical troubleshooting and data analysis to determine root
+                            causes of software
                             problems. Provide solutions or action plans for customers that resolve the issue.</p>
                     </header>
                 </section>
                 <section>
                     <header>
-                        <h3 class="h">Junior Editor and translator (Vulkan Publishing)</h3>
-                        <p>(2018-2020)</p>
-                        <p>Proficiently edited and curated a diverse range of fiction and non-fiction novels, ensuring
+                        <h3 class="h">Junior Editor and translator - <strong>Vulkan Publishing</strong></h3>
+                        <p class="p">(2018-2020)</p>
+                        <p class="description">Proficiently edited and curated a diverse range of fiction and
+                            non-fiction novels, ensuring
                             high-quality content. Developed and implemented a successful gift program, showcasing strong
                             project management and creative skills.</p>
                     </header>
                 </section>
                 <section>
                     <header>
-                        <h3 class="h">Financial Helpdesk Analyst (NCR Corporation)</h3>
-                        <p>(2016-2017)</p>
-                        <p>Handled hardware, networking, and application support inquiries submitted to the helpdesk
-                            through
-                            various channels including the Ticketing system, email, phone calls, and Live chat. This
-                            involved thorough investigation and documentation of incident root causes and resolutions,
-                            as
-                            well as the implementation of remote fixes for both documented and undocumented issues. </p>
+                        <h3 class="h">Financial Helpdesk Analyst - <strong>NCR Corporation</strong></h3>
+                        <p class="p">(2016-2017)</p>
+                        <p class="description">Provided comprehensive hardware, networking, and application support via
+                            multiple channels (Ticketing, email, calls, Live chat). Conducted in-depth issue analysis,
+                            documented root causes, and applied remote fixes. </p>
                     </header>
                 </section>
             </section>
-            <section id="skills">
-                <h2 class="h">Skills</h2>
-                <section>
-                    <h3 class="h">Soft Skills</h3>
-                    <ul>
-                        <li class="skill">Problem-Solving</li>
-                        <li class="skill">Time Management</li>
-                        <li class="skill">Creativity</li>
-                        <li class="skill">Adaptability</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3 class="h">Technical Skills</h3>
-                    <ul>
-                        <li class="skill">HTML</li>
-                        <li class="skill">CSS</li>
-                        <li class="skill">JavaScript</li>
-                        <li class="skill">React</li>
-                        <li class="skill">Node.js</li>
-                        <li class="skill">WebFlow</li>
-                    </ul>
+            <section>
+                <h2 class="main-skill-title">Skills</h2>
+                <section id="skills">
+                    <div class="skill-list">
+                        <h3 class="h skill-category">Soft Skills</h3>
+                        <ul>
+                            <li class="skill">Problem-Solving</li>
+                            <li class="skill">Time Management</li>
+                            <li class="skill">Creativity</li>
+                            <li class="skill">Adaptability</li>
+                        </ul>
+                    </div>
+                    <div class="skill-list">
+
+
+                        <h3 class="h skill-category">Technical Skills</h3>
+                        <ul>
+                            <li class="skill">HTML</li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">JavaScript</li>
+                            <li class="skill">React</li>
+                            <li class="skill">Node.js</li>
+                            <li class="skill">WebFlow</li>
+                        </ul>
+                    </div>
+                    <div class="skill-list">
+                        <h3 class="h skill-category">Languages</h3>
+                        <ul>
+                            <li class="skill">French - C2</li>
+                            <li class="skill">English - C2</li>
+                            <li class="skill">Spanish - C1</li>
+                            <li class="skill">German - B2</li>
+                        </ul>
+                    </div>
                 </section>
             </section>
+
             <section id="contact">
                 <h2 class="h">Contact</h2>
                 <ul>
