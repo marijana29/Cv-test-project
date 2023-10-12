@@ -5,201 +5,166 @@
 }
 
 html {
-  font-family: inherit;
-  font-size: 20px;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 22px;
-  }
-  .main > * {
-    margin-bottom: 2.4rem;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 992px) {
   html {
-    font-size: 24px;
+    font-size: 20px;
   }
-  .badge {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+*::selection {
+  background-color: #ffa07a;
+}
+
+/**************************************************************/
+
+.header {
+  padding: 3rem 1rem;
+  padding-top: 4.5rem;
+  text-align: center;
+  background-color: lemonchiffon;
+  position: relative;
+}
+
+.heading-group {
+  font-size: 4rem;
+}
+
+.main-heading {
+  font-size: 3em;
+}
+
+.profession {
+  font-size: 1em;
+}
+
+.profession::after {
+  content: "💻🚀📚";
+}
+
+.badge {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: #ffa07a;
+  color: black;
+}
+
+@media screen and (min-width: 992px) {
+  .hire-me {
     position: fixed;
   }
 }
 
 @media print {
-  .nav-link,
-  .badge {
-    display: none !important;
+  .hire-me {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
   }
 }
 
-.header {
-  padding: 2.4rem 0.8rem;
-  max-width: 40rem;
-  margin: 0 auto;
-  position: relative;
-  background-color: lemonchiffon;
-  text-align: center;
-  border-bottom: 0.1rem solid #000;
-}
-
-.header-content {
-  font-size: 2rem;
-}
-
-.header-content h1 {
-  font-size: 1em;
-}
-
-.header-content p {
-  font-size: 0.5em;
-}
-
-.nav-link {
-  padding: 0.2rem 0.4rem;
-}
-
-.badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  border-radius: 0.31rem;
-  background: salmon;
-  padding: 0.2rem;
-  font-size: 0.8rem;
-}
-
-#experiences {
+.navigation {
   display: flex;
   flex-direction: column;
-  text-align: left;
   align-items: center;
 }
 
-#profile {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+@media screen and (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
-#profile-title {
-  text-align: center;
-}
-.description {
-  text-align: left;
-}
-
-#skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  padding: 20px;
-  text-align: center;
+.nav-link {
+  padding: 0.25rem 0.5rem;
+  color: black;
+  text-decoration: none;
 }
 
-.skill-list {
-  list-style-type: none;
-  padding: 0;
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.648);
+  background-color: lightgray;
 }
 
-.skill-list li {
-  margin-bottom: 8px;
-  text-align: justify;
+.nav-link:active {
+  color: white;
+  background-color: grey;
 }
 
-.skill-category {
-  font-weight: bold;
+@media screen and (min-width: 768px) {
+  .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
 }
 
-.main-skill-title {
-  text-align: center;
-  padding: 0;
-  font-family: monospace;
-
-  margin-left: 0.625rem;
-}
-main {
-  max-width: 150ch;
+.main {
+  max-width: 60ch;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .main > * + * {
-  margin-top: 2.4rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main > * + * {
+    margin-top: 5rem;
+  }
 }
 
 .main > * {
-  border-top: none;
-  padding: 1rem;
-  max-width: 40rem;
-  margin: 0 auto;
-  background-color: #bdb5a9;
+  border-top: 0.125rem solid grey;
+  padding: 0 1rem;
 }
 
 .main > *:first-child {
   border-top: none;
 }
 
-#profession::after {
-  content: "👩‍💻🎨🌐";
-  margin-left: 0.3125rem;
+.article-heading {
+  position: relative;
+  left: -1rem;
 }
 
-ul {
-  list-style-type: none;
+.experience-header {
+  display: flex;
+  flex-direction: column;
 }
 
-.h {
-  font-family: monospace;
-  display: inline-block;
-  margin-left: 0.625rem;
-}
-
-.p {
-  display: inline-block;
-}
-
-#contact {
-  padding: 0.3125rem;
-  margin-bottom: 0.8rem;
-}
-
-.contact {
-  list-style-type: none;
-}
-
-.skill {
-  list-style-image: url("image.png");
-  margin-bottom: 8px;
-}
-
-a:link {
-  color: cornflowerblue;
-  text-decoration: none;
-}
-
-a:visited {
-  color: salmon;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  color: aquamarine;
-}
-
-*::selection {
-  color: #bdb5a9;
-  background-color: cornflowerblue;
-}
-
-article {
-  padding: 0 1.875rem;
+@media screen and (min-width: 768px) {
+  .experience-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }

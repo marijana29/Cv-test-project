@@ -8,6 +8,7 @@
     <meta name="description" content="the CV structure">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>My CV</title>
@@ -17,105 +18,97 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <h1 class="h">Marijana Milanov</h1>
-            <p id="profession">Web developer</p>
+            <h1 class="main-heading">Marijana Milanov</h1>
+            <p class="profession">Web developer</p>
         </div>
 
-        <nav>
+        <nav class="navigation">
             <a class="nav-link" href="#profile">Profile</a>
-            <a class="nav-link" href="#experiences">Experiences</a>
+            <a class="nav-link" href="#experience">Experience</a>
             <a class="nav-link" href="#skills">Skills</a>
             <a class="nav-link" href="#contact">Contact</a>
         </nav>
-        <aside class="badge">Hire me
-        </aside>
+        <aside class="badge">Hire me </aside>
     </header>
     <main class="main">
-        <article>
-            <section id="profile">
-                <h2 class="h" id="profile-title">Profile</h2>
-                <p>I'm Marijana, a passionate Web Developer with a background in IT Technical Support, and experience in
-                    translation and publishing. I love creating engaging and user-friendly websites. Alongside my
-                    technical skills, I have a proven ability in
-                    translating and editing various types of content for publishing. I'm eager to bring this unique
-                    blend of skills to tackle new challenges in the field of web development.</p>
-            </section>
-            <section id="experiences">
-                <h2 class="h" id="experience-title">Experiences</h2>
-                <section>
-                    <header>
-                        <h3 class="h">Technical Support Analyst - <strong>Jaggaer</strong></h3>
-                        <p class="p">(2020-2023)</p>
-                        <p class="description">Perform technical troubleshooting and data analysis to determine root
-                            causes of software
-                            problems. Provide solutions or action plans for customers that resolve the issue.</p>
-                    </header>
-                </section>
-                <section>
-                    <header>
-                        <h3 class="h">Junior Editor and translator - <strong>Vulkan Publishing</strong></h3>
-                        <p class="p">(2018-2020)</p>
-                        <p class="description">Proficiently edited and curated a diverse range of fiction and
-                            non-fiction novels, ensuring
-                            high-quality content. Developed and implemented a successful gift program, showcasing strong
-                            project management and creative skills.</p>
-                    </header>
-                </section>
-                <section>
-                    <header>
-                        <h3 class="h">Financial Helpdesk Analyst - <strong>NCR Corporation</strong></h3>
-                        <p class="p">(2016-2017)</p>
-                        <p class="description">Provided comprehensive hardware, networking, and application support via
-                            multiple channels (Ticketing, email, calls, Live chat). Conducted in-depth issue analysis,
-                            documented root causes, and applied remote fixes. </p>
-                    </header>
-                </section>
+        <article id="profile">
+            <h2 class="article-heading">Profile</h2>
+            <p>I'm Marijana, an enthusiastic Web Developer with a background in IT Technical Support, and experience
+                in translation and publishing. I love creating engaging and user-friendly websites. Alongside my
+                technical skills, I have a proven ability in
+                translating and editing various types of content for publishing. I'm eager to bring this unique
+                blend of skills to tackle new challenges in the field of web development.</p>
+        </article>
+        <article id="experience">
+            <h2 class="article-heading">Experience</h2>
+            <section>
+                <header class="experience-header">
+                    <h3 class="experience-heading">Jaggaer - Technical Support Analyst</h3>
+                    <p class="experience-subheading">2020-2023</p>
+                </header>
+                <p>Perform technical troubleshooting and data analysis to determine root
+                    causes of software
+                    problems. Provide solutions or action plans for customers that resolve the issue.</p>
             </section>
             <section>
-                <h2 class="main-skill-title">Skills</h2>
-                <section id="skills">
-                    <div class="skill-list">
-                        <h3 class="h skill-category">Soft Skills</h3>
-                        <ul>
-                            <li class="skill">Problem-Solving</li>
-                            <li class="skill">Time Management</li>
-                            <li class="skill">Creativity</li>
-                            <li class="skill">Adaptability</li>
-                        </ul>
-                    </div>
-                    <div class="skill-list">
-
-
-                        <h3 class="h skill-category">Technical Skills</h3>
-                        <ul>
-                            <li class="skill">HTML</li>
-                            <li class="skill">CSS</li>
-                            <li class="skill">JavaScript</li>
-                            <li class="skill">React</li>
-                            <li class="skill">Node.js</li>
-                            <li class="skill">WebFlow</li>
-                        </ul>
-                    </div>
-                    <div class="skill-list">
-                        <h3 class="h skill-category">Languages</h3>
-                        <ul>
-                            <li class="skill">French - C2</li>
-                            <li class="skill">English - C2</li>
-                            <li class="skill">Spanish - C1</li>
-                            <li class="skill">German - B2</li>
-                        </ul>
-                    </div>
-                </section>
+                <header class="experience-header">
+                    <h3 class="experience-heading">Vulkan Publishing - Editor and translator</h3>
+                    <p class="experience-subheading">2018-2020</p>
+                </header>
+                <p>Proficiently edited and curated a diverse range of fiction and
+                    non-fiction novels, ensuring
+                    high-quality content. Developed and implemented a successful gift program, showcasing strong
+                    project management and creative skills.</p>
             </section>
-
-            <section id="contact">
-                <h2 class="h">Contact</h2>
+            <section>
+                <header class="experience-header">
+                    <h3 class="experience-heading">NCR Corporation - Helpdesk Analyst</h3>
+                    <p class="experience-subheading">2016-2017</p>
+                </header>
+                <p>Provided comprehensive hardware, networking, and application support via
+                    multiple channels (Ticketing, email, calls, Live chat). Conducted in-depth issue analysis,
+                    documented root causes, and applied remote fixes. </p>
+            </section>
+        </article>
+        <article id="skills">
+            <h2 class="article-heading">Skills</h2>
+            <section>
+                <h3>Soft Skills</h3>
                 <ul>
-                    <li class="contact"><a href="mailto:marijana.kalicanin@yahoo.com">email</a></li>
-                    <li class="contact"><a href="tel:01756249459">phone</a></li>
+                    <li>Problem-Solving</li>
+                    <li>Time Management</li>
+                    <li>Creativity</li>
+                    <li>Adaptability</li>
                 </ul>
-
             </section>
+            <section>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>WebFlow</li>
+                </ul>
+            </section>
+            <section></section>
+            <h3>Languages</h3>
+            <ul>
+                <li>French - C2</li>
+                <li>English - C2</li>
+                <li>Spanish - C1</li>
+                <li>German - B2</li>
+            </ul>
+            </section>
+        </article>
+
+        <article id="contact">
+            <h2 class="article-heading">Contact</h2>
+            <ol>
+                <li><a href="mailto:marijana.kalicanin@yahoo.com">email</a></li>
+                <li><a href="tel:01756249459">phone</a></li>
+            </ol>
         </article>
     </main>
 
