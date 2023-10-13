@@ -125,16 +125,21 @@ ul {
   padding: 0.25rem 0.5rem;
   color: var(--text-color);
   text-decoration: none;
+  transition: box-shadow 0.3s ease;
 }
 
 .nav-link:hover {
-  color: rgba(0, 0, 0, 0.648);
-  background-color: lightgray;
+  color: var(--nav-hover-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-link:active {
   color: white;
   background-color: grey;
+}
+
+.nav-link:focus {
+  outline: 2px solid var(--main-color);
 }
 
 @media screen and (min-width: 768px) {
