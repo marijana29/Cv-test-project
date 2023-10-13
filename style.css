@@ -1,12 +1,14 @@
 :root {
-  --main-color: #ffa07a;
-  --background-color: #a8d8ea;
-  --accent-color: #ffaa9c;
-  --border-color: grey;
-  --text-color: black;
-  --nav-hover-color: rgba(0, 0, 0, 0.648);
-  --background-color-dark: #000000;
-  --text-color-dark: #ffffff;
+  --main-color: #b2a8d8; /* Soft Purple */
+  --background-color: #e1d5e7; /* Light Lavender */
+  --accent-color: #a4c2f4; /* Soft Blue */
+  --border-color: #d1d1d1; /* Light Gray */
+  --text-color: #333; /* Dark Gray */
+  --nav-hover-color: rgba(0, 0, 0, 0.5); /* Dark Gray with Transparency */
+  --background-color-dark: #1c1c1c; /* Dark Gray */
+  --text-color-dark: #fff; /* White */
+  --gradient-start: #e1d5e7; /* Light Lavender */
+  --gradient-end: #f0f7fa; /* Very Light Pastel Blue */
 }
 
 *,
@@ -46,8 +48,8 @@ body {
   text-align: center;
   background-image: linear-gradient(
     45deg,
-    var(--background-color),
-    var(--accent-color)
+    var(--gradient-start),
+    var(--gradient-end)
   );
   position: relative;
 }
@@ -76,6 +78,7 @@ body {
   border-radius: 0.25rem;
   background: var(--accent-color);
   color: black;
+  transition: transform 0.3s ease;
 }
 
 ul {
@@ -126,6 +129,7 @@ ul {
   color: var(--text-color);
   text-decoration: none;
   transition: box-shadow 0.3s ease;
+  border-radius: 0.25rem;
 }
 
 .nav-link:hover {
@@ -140,6 +144,10 @@ ul {
 
 .nav-link:focus {
   outline: 2px solid var(--main-color);
+}
+
+.header:hover .badge {
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
