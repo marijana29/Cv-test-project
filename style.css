@@ -1,14 +1,14 @@
 :root {
-  --main-color: #b2a8d8; /* Soft Purple */
-  --background-color: #e1d5e7; /* Light Lavender */
-  --accent-color: #a4c2f4; /* Soft Blue */
-  --border-color: #d1d1d1; /* Light Gray */
-  --text-color: #333; /* Dark Gray */
-  --nav-hover-color: rgba(0, 0, 0, 0.5); /* Dark Gray with Transparency */
-  --background-color-dark: #1c1c1c; /* Dark Gray */
-  --text-color-dark: #fff; /* White */
-  --gradient-start: #e1d5e7; /* Light Lavender */
-  --gradient-end: #f0f7fa; /* Very Light Pastel Blue */
+  --main-color: #b2a8d8;
+  --background-color: #e1d5e7;
+  --accent-color: #a4c2f4;
+  --border-color: #d1d1d1;
+  --text-color: #333;
+  --nav-hover-color: rgba(0, 0, 0, 0.5);
+  --background-color-dark: #1c1c1c;
+  --text-color-dark: #fff;
+  --gradient-start: #e1d5e7;
+  --gradient-end: #f0f7fa;
 }
 
 *,
@@ -117,10 +117,73 @@ ul {
   flex-direction: column;
 }
 
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  grid-column-gap: 20px;
+  padding: 2rem;
+  margin: 0;
+}
+
+#skills section {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#skills section h3 {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  align-self: center;
+  display: inline;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills ul li {
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    .header.tapped .badge {
+      transform: scale(1.2);
+    }
+  }
+  #skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 60ch;
+    width: 100%;
+    margin-top: 2rem;
   }
 }
 
